@@ -1,0 +1,58 @@
+body{
+    background-color: #eeee;
+}
+.form{
+    
+        height: 50vh;
+        margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.nameField input{
+    width: 40%;
+    padding: 8px 12px;
+    outline: none;
+
+}
+.emailField input{
+    width: 40%;
+    padding: 8px 12px;
+    outline: none;
+
+}
+.age input{
+    width: 10%;
+    padding: 5px 8px;
+    outline: none;
+}
+
+#gender{
+    margin-left:8px ;
+    padding: 7px;
+}
+#address{
+    padding: 7px;
+}
+.red{
+    color: red;
+}
+.button{
+    padding: 8px 10px;
+    background-color: gray;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+}
+.table{
+    margin: 20px 0px;
+}
+/* .hidden{
+    display: none;
+} */

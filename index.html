@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- <div class="container" >
+    <form>
+        <div class="mb-3 nameField d-flex">
+          <input type="text"  class="names" placeholder="Enter your First Name">
+            <input type="text"  class="names" placeholder="Enter your Last Name">
+        </div>
+        <div class="mb-3 d-flex">
+            <input type="text" class="dobValue"  placeholder="dd/mm/yyyy">
+            <textarea class="form-control hobbieValue"  placeholder="Enter your Hobbies" rows="3"></textarea>
+          </div>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+    </div> -->
+
+
+  <div class="container">
+
+    <form class="form">
+      <div class="flex nameField">
+
+        <input type="text" class="names fname" placeholder="Enter your First Name">
+        <input type="text" class="names lname" placeholder="Enter your Last Name" style="margin-left:8px ;">
+      </div>
+      <div class="flex emailField">
+
+        <input type="text" class="email" placeholder="Enter your Email">
+      </div>
+      <div class="flex age">
+
+        <input type="number" class="ageValue" placeholder="Age">
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="flex hobbie">
+        <input type="text" class="dobValue" placeholder="dd/mm/yyyy">
+        <textarea type="text" class="hobbieValue" placeholder="Enter your Hobbies" style="margin-left:8px ;"></textarea>
+      </div>
+      <div class="flex" class="address">
+        <div style="margin-left: 10px;">
+          <h3 style="margin: 5px 0px;">Country</h3>
+        <select id="address">
+
+          <option value="Australia">Australia</option>
+
+          <option value="Germany">Germany</option>
+
+          <option value="Italy">Italy</option>
+
+          <option value="Canada">Canada</option>
+
+          <option value="Greece">Greece</option>
+
+          <option value="Japan">Japan</option>
+
+          <option value="Spain">Spain</option>
+
+          <option value="United">United</option>
+
+          <option value="India">India</option>
+
+          <option value="Switzerland">Switzerland</option>
+
+          <option value="Austria">Austria</option>
+
+          <option value="Brazil">Brazil</option>
+
+          <option value="China">China</option>
+
+          <option value="Cuba">Cuba</option>
+
+          <option value="France">France</option>
+
+          <option value="Ireland">Ireland</option>
+
+          <option value="Israel">Israel</option>
+
+          <option value="Russia">Russia</option>
+
+          <option value="Afghanistan">Afghanistan</option>
+
+          <option value="Albania">Albania</option>
+
+          <option value="Algeria">Algeria</option>
+
+          <option value="Armenia">Armenia</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Azerbaijan">Azerbaijan</option>
+        </select>
+      </div>
+      <div style="margin-left: 10px;"  class="change">
+        <h3 style="margin: 5px 0px;">State</h3>
+        <select id="states" style="padding: 7px" >
+       
+ </select>
+</div>
+<div style="margin-left: 10px;" class="changeCity">
+         <h3 style="margin: 5px 0px;">City</h3>
+        <select id="cities" style="padding: 7px" >
+ </select>
+</div>
+      </div>
+      <div>
+
+        <button type="submit" class="button" id="btn">Sumbit</button>
+      </div>
+    </form>
+
+    <div class="Table">
+      <table class="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Country</th>
+            <th scope="col">State</th>
+            <th scope="col">City</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+         
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
