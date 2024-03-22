@@ -1,6 +1,18 @@
 body{
     background-color: #eeee;
 }
+.position{
+    position: absolute;
+    top: 1%;
+    right: -1%;
+    cursor: pointer;
+}
+.dposition{
+    position: absolute;
+    top: 1%;
+    right: -3%;
+    cursor: pointer;
+}
 .form{
     
         height: 50vh;
@@ -15,6 +27,12 @@ body{
     /* justify-content: space-between; */
     align-items: center;
 }
+.flexalign{
+    margin-top: 12px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: self-start;
+}
 .nameField input{
     width: 40%;
     padding: 8px 12px;
@@ -27,10 +45,14 @@ body{
     outline: none;
 
 }
-.age input{
+.age input:first-child{
     width: 10%;
     padding: 5px 8px;
     outline: none;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
 }
 
 #gender{
@@ -53,6 +75,24 @@ body{
 .table{
     margin: 20px 0px;
 }
-/* .hidden{
+.block{
+    display: block;
+}
+.back{
     display: none;
-} */
+}
+.Table{
+    max-width: 80vw;
+    margin: 0px auto;
+}
+.data{
+    cursor: pointer;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.span{
+    background-color: transparent; 
+    border: none; 
+    width: fit-content;
+}
