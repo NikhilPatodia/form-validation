@@ -91,8 +91,16 @@ body{
 .rotate{
     transform: rotate(180deg);
 }
-.span{
+.button-p{
     background-color: transparent; 
     border: none; 
     width: fit-content;
+    font-weight: 600;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+}
+.img-size{
+    width: 18px;
+    
 }

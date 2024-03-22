@@ -1,7 +1,6 @@
 let names = document.querySelectorAll('.names');
-let allData = document.querySelectorAll('.data');
+let arrowPostion = "up";
 let genderValue = "";
-let buttons = document.querySelectorAll('.span')
 let validateAZ = /[a-zA-Z]/
 let backTable = document.querySelector('.backTable');
 let backToTable = document.querySelector('.backToTable');
@@ -40,34 +39,6 @@ let validDob = /^(198[0-9]|199[0-9]|200[0-9]|201[0-9]|202[0-4])-(0[1-9]|1[0-2])-
 let svalidDob = /^(0[1-9]|1[0-2])\/(0[1-9]|[1-2][0-9]|3[0-1])\/(198[0-9]|199[0-9]|200[0-9]|201[0-9]|202[0-4])$/;
 let globalIndex;
 
-const dynamicArrow = (type, state)=>{
-   console.log("run", type, state, (type === "up") && (state ==="Fist Name"))
-  if((type === "none") && (state === "none")){
-    console.log("run2")
-    Array.from(buttons).forEach((elem, index)=>{
-      buttons[index].style.display = "none"
-    })
-  }
- else if((type === "up") && (state ==="First Name")){
-    Array.from(buttons).forEach((elem, index)=>{
-      if(elem.value.includes("decending")){
-          buttons[index].style.display = "none";
-      }else{
-        buttons[index].style.display = "block";
-      }
-    })
-    
-  }
-}
-Array.from(allData).forEach((elem)=>{
-  elem.addEventListener('mouseover', (e)=>{
-    dynamicArrow("up", e.target.innerText.trim());
-
-  })
-})
-
-
-dynamicArrow("none", "none")
 
 let allCountry = {
  "Australia": {
