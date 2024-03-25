@@ -1,0 +1,106 @@
+body{
+    background-color: #eeee;
+}
+.position{
+    position: absolute;
+    top: 1%;
+    right: -1%;
+    cursor: pointer;
+}
+.dposition{
+    position: absolute;
+    top: 1%;
+    right: -3%;
+    cursor: pointer;
+}
+.form{
+    
+        height: 50vh;
+        margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.flexalign{
+    margin-top: 12px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: self-start;
+}
+.nameField input{
+    width: 40%;
+    padding: 8px 12px;
+    outline: none;
+
+}
+.emailField input{
+    width: 40%;
+    padding: 8px 12px;
+    outline: none;
+
+}
+.age input:first-child{
+    width: 10%;
+    padding: 5px 8px;
+    outline: none;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+#gender{
+    margin-left:8px ;
+    padding: 7px;
+}
+#address{
+    padding: 7px;
+}
+.red{
+    color: red;
+}
+.button{
+    padding: 8px 10px;
+    background-color: gray;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+}
+.table{
+    margin: 20px 0px;
+}
+.block{
+    display: block;
+}
+.back{
+    display: none;
+}
+.Table{
+    max-width: 80vw;
+    margin: 0px auto;
+}
+.data{
+    cursor: pointer;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.button-p{
+    background-color: transparent; 
+    border: none; 
+    width: fit-content;
+    font-weight: 600;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+}
+.img-size{
+    width: 18px;
+    
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Enter DOB</h5>
+        </div>
+        <div class="modal-body">
+          <div class="flex">
+            <input type="date" class="fdob">
+            <span style="margin: 0px 8px;">To</span>
+            <input type="date" class="sdob">
+            <!-- <input type="text"  class="fdob" placeholder="mm/dd/yyyy"><span style="margin: 0px 8px;">To</span>
+          <input type="text"  class="sdob" placeholder="mm/dd/yyyy"> -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary closeModal" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary searchDob">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+
+    <form class="form">
+      <div class="flex nameField">
+
+        <input type="text" class="names fname" placeholder="Enter your First Name">
+        <input type="text" class="names lname" placeholder="Enter your Last Name" style="margin-left:8px ;">
+      </div>
+      <div class="flex emailField">
+
+        <input type="text" class="email" placeholder="Enter your Email">
+      </div>
+      <div class="flex age">
+
+        <input type="number" class="ageValue" placeholder="Age" style="margin-right: 12px;">
+
+        <input type="radio" class="gender" name="gender" id="male" value="male" style="margin-right: 5px;">
+        <label for="male" style="margin-right: 12px;">Male</label>
+        <input type="radio" class="gender" name="gender" value="female" style="margin-right: 5px;">
+        <label for="female">Female</label>
+
+      </div>
+      <div class="flexalign hobbie">
+        <input type="date" class="dobValue">
+        <span style="margin: 0px 8px;">Hobbies: </span>
+        <div class="flex-col">
+          <div class="hobby-detail">
+            <input type="checkbox" class="hobby" name="hobby" value="Dancing" style="margin-right: 5px;">
+            <label for="male" style="margin-right: 12px;">Dancing</label>
+          </div>
+          <div class="hobby-detail">
+            <input type="checkbox" class="hobby" name="hobby" value="Sports" style="margin-right: 5px;">
+            <label for="female">Sports</label>
+          </div>
+          <div class="hobby-detail">
+            <input type="checkbox" class="hobby" name="hobby" value="Singing" style="margin-right: 5px;">
+            <label for="female">Singing</label>
+          </div>
+          <div class="hobby-detail">
+            <input type="checkbox" class="hobby" name="hobby" value="Drawing" style="margin-right: 5px;">
+            <label for="female">Drawing</label>
+          </div>
+          <div class="hobby-detail">
+            <input type="checkbox" class="hobby" name="hobby" value="Other" style="margin-right: 5px;">
+            <label for="female">Other</label>
+          </div>
+        </div>
+
+      </div>
+      <div class="flex" class="address">
+        <div style="margin-left: 10px;">
+          <h3 style="margin: 5px 0px;">Country</h3>
+          <select id="address">
+          </select>
+
+        </div>
+        <div style="margin-left: 10px;" class="change">
+          <h3 style="margin: 5px 0px;">State</h3>
+          <select id="states" style="padding: 7px">
+          </select>
+        </div>
+        <div style="margin-left: 10px;" class="changeCity">
+          <h3 style="margin: 5px 0px;">City</h3>
+          <select id="cities" style="padding: 7px">
+          </select>
+        </div>
+      </div>
+      <div>
+
+        <button type="submit" class="button" id="btn">Sumbit</button>
+      </div>
+    </form>
+
+
+  </div>
+  <div class="Table">
+    <div class="flex">
+      <div class="filters" style="margin-right: 15px;">
+        <h6>Using First Name</h6>
+        <div class="flex">
+          <button value="accending" style="margin-right: 8px;" class="sort">Sort by A-Z</button>
+          <button value="decending" style="margin-right: 8px;" class="sort">Sort by Z-A</button>
+        </div>
+      </div>
+      <div class="filters" style="margin-right: 15px;">
+        <h6>Using Second Name</h6>
+        <div class="flex">
+          <button value="laccending" style="margin-right: 8px;" class="sort">Sort by A-Z</button>
+          <button value="ldecending" style="margin-right: 8px;" class="sort">Sort by Z-A</button>
+        </div>
+      </div>
+      <div class="filters" style="margin-right: 15px;">
+        <h6>Using Email</h6>
+        <div class="flex">
+          <button value="eaccending" style="margin-right: 8px;" class="sort">Sort by A-Z</button>
+          <button value="edecending" style="margin-right: 8px;" class="sort">Sort by Z-A</button>
+        </div>
+      </div>
+      <div class="filters" style="margin-right: 15px;">
+        <h6>Using DOB</h6>
+        <div class="flex">
+          <button value="daccending" style="margin-right: 8px;" class="sort">Sort by DOB</button>
+        </div>
+      </div>
+      <div class="filters" style="margin-right: 15px;">
+        <h6>Using Searching</h6>
+        <div class="flex">
+          <input type="text" class="filter" placeholder="Search Keywords...">
+          <button value="filterSearch" style="margin-left: 8px;" class="sort">Search</button>
+        </div>
+      </div>
+      <div class="filters" style="margin-right: 15px;">
+        <h6>Filter DOB</h6>
+        <div class="flex">
+          <button value="filterDob" style="margin-left: 8px;" class="filterDob">DOB</button>
+        </div>
+      </div>
+      <div class="filters backTable back">
+        <h6>Back To Table</h6>
+        <div class="flex">
+          <button style="margin-left: 8px;" class="backToTable">Back</button>
+        </div>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+
+          <th scope="col" class="data thcol"><button class="button-p sort forName" value="accending"><span>First
+                Name</span> <div class="forHide"><img class="img-size up forName" src="up.png" alt="" srcset=""><img class="img-size down forName back" src="down.png"
+                alt="" srcset=""></div></button></th>
+          <th scope="col" class="data thcol"><button value="laccending" class="button-p sort forLast"><span>Last Name</span> <div class="forHide"><img class="img-size up forLast" src="up.png" alt="" srcset=""><img class="img-size down forLast back" src="down.png" alt="" srcset=""></div></button></th>
+          <th scope="col" class="data thcol"><button value="eaccending" class="button-p sort forEmail"><span>Email</span> <div class="forHide"><img class="img-size up forEmail"
+                src="up.png" alt="" srcset=""><img class="img-size down back forEmail" src="down.png" alt="" srcset=""></div></button></th>
+          <th scope="col" class="data thcol"><button class="button-p "><span>Age</span></button></th>
+          <th scope="col" class="data thcol"><button value="daccending" class="button-p sort forDOB"><span>DOB</span> <div class="forHide"><img class="img-size up forDOB"
+                src="up.png" alt="" srcset=""><img class="img-size down forDOB back" src="down.png" alt="" srcset=""></div></button></th>
+          <th scope="col" class="data thcol"><button class="button-p"><span>Hobby</span></button></th>
+          <th scope="col" class="data thcol"><button class="button-p"><span>Country</span></button></th>
+          <th scope="col" class="data thcol"><button class="button-p"><span>State</span></button></th>
+          <th scope="col" class="data thcol"><button class="button-p"><span>City</span></button></th>
+          <th scope="col" class="data thcol"><button class="button-p"><span>Gender</span></button></th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+
+
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
